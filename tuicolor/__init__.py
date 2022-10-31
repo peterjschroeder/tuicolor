@@ -98,24 +98,24 @@ def config_load(tui):
         }})
     elif tui == 'urwid':
         return [
-        (['bg']+config['pallette']['background'].split(',')),
-        (['borders']+config['pallette']['borders'].split(',')),
-        (['button']+config['pallette']['button'].split(',')),
-        (['control']+config['pallette']['control'].split(',')),
-        (['disabled']+config['pallette']['disabled'].split(',')),
-        (['edit_text']+config['pallette']['edit_text'].split(',')),
-        (['field']+config['pallette']['field'].split(',')),
-        (['focus_edit_text']+config['pallette']['focus_edit_text'].split(',')),
-        (['focus_button']+config['pallette']['focus_button'].split(',')),
-        (['focus_field']+config['pallette']['focus_field'].split(',')),
-        (['focus_readonly']+config['pallette']['focus_readonly'].split(',')),
-        (['invalid']+config['pallette']['invalid'].split(',')),
-        (['label']+config['pallette']['label'].split(',')),
-        (['readonly']+config['pallette']['readonly'].split(',')),
-        (['scroll']+config['pallette']['scroll'].split(',')),
-        (['selected_field']+config['pallette']['selected_field'].split(',')),
-        (['selected_focus_control']+config['pallette']['selected_focus_control'].split(',')),
-        (['selected_focus_field']+config['pallette']['selected_focus_field'].split(',')),
-        (['title']+config['pallette']['title'].split(','))
+        (['bg']+[config['pallette']['background'].split(',')[0], config['pallette']['background'].split(',')[1], config['pallette']['background'].split(',')[2]]),
+#        (['borders']+config['pallette']['borders'].split(',')),
+#        (['button']+config['pallette']['button'].split(',')),
+#        (['control']+config['pallette']['control'].split(',')),
+#        (['disabled']+config['pallette']['disabled'].split(',')),
+#        (['edit_text']+config['pallette']['edit_text'].split(',')),
+#        (['field']+config['pallette']['field'].split(',')),
+#        (['focus_edit_text']+config['pallette']['focus_edit_text'].split(',')),
+#        (['focus_button']+config['pallette']['focus_button'].split(',')),
+#        (['focus_field']+config['pallette']['focus_field'].split(',')),
+#        (['focus_readonly']+config['pallette']['focus_readonly'].split(',')),
+#        (['invalid']+config['pallette']['invalid'].split(',')),
+#        (['label']+config['pallette']['label'].split(',')),
+#        (['readonly']+config['pallette']['readonly'].split(',')),
+#        (['scroll']+config['pallette']['scroll'].split(',')),
+#        (['selected_field']+config['pallette']['selected_field'].split(',')),
+#        (['selected_focus_control']+config['pallette']['selected_focus_control'].split(',')),
+#        (['selected_focus_field']+config['pallette']['selected_focus_field'].split(',')),
+#        (['title']+config['pallette']['title'].split(','))
         ]
 
