@@ -97,9 +97,10 @@ def config_load(tui):
                 'title': (colors[config['pallette']['title'].split(',')[0]], attributes[config['pallette']['title'].split(',')[1]], colors[config['pallette']['title'].split(',')[2]])
         }})
     elif tui == 'urwid':
+        def uwcol(color):
+            return color.replace('blue', 'dark blue').replace('green', 'dark green').replace('red', 'dark red').replace('yellow', 'dark yellow').replace('cyan', 'dark cyan')
         return [
-        #(['background']+[config['pallette']['background'].split(',')[0], config['pallette']['background'].split(',')[2], '' if config['pallette']['background'].split(',')[1] == 'normal' else config['pallette']['background'].split(',')[1]]),
-        (['background']+['0', 'bold', '1']),
+        (['background']+[uwcol(config['pallette']['background'].split(',')[0]), config['pallette']['background'].split(',')[2], '' if config['pallette']['background'].split(',')[1] == 'normal' else uwcol(config['pallette']['background'].split(',')[1])]),
 #        (['borders']+config['pallette']['borders'].split(',')),
 #        (['button']+config['pallette']['button'].split(',')),
 #        (['control']+config['pallette']['control'].split(',')),
