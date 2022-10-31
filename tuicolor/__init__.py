@@ -98,7 +98,8 @@ def config_load(tui):
         }})
     elif tui == 'urwid':
         return [
-        (['bg']+[config['pallette']['background'].split(',')[0], config['pallette']['background'].split(',')[2], '' if config['pallette']['background'].split(',')[1] == 'normal' else config['pallette']['background'].split(',')[1]]),
+        #(['background']+[config['pallette']['background'].split(',')[0], config['pallette']['background'].split(',')[2], '' if config['pallette']['background'].split(',')[1] == 'normal' else config['pallette']['background'].split(',')[1]]),
+        (['background']+['0', 'bold', '1']),
 #        (['borders']+config['pallette']['borders'].split(',')),
 #        (['button']+config['pallette']['button'].split(',')),
 #        (['control']+config['pallette']['control'].split(',')),
