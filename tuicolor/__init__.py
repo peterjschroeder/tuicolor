@@ -100,24 +100,24 @@ def config_load(tui):
         def uwcol(color):
             return color.replace('blue', 'dark blue').replace('green', 'dark green').replace('red', 'dark red').replace('yellow', 'dark yellow').replace('cyan', 'dark cyan')
         return [
-        (['background']+[uwcol(config['pallette']['background'].split(',')[0]), uwcol(config['pallette']['background'].split(',')[2]), '' if config['pallette']['background'].split(',')[1] == 'normal' else config['pallette']['background'].split(',')[1]]),
-#        (['borders']+config['pallette']['borders'].split(',')),
-#        (['button']+config['pallette']['button'].split(',')),
-#        (['control']+config['pallette']['control'].split(',')),
-#        (['disabled']+config['pallette']['disabled'].split(',')),
-#        (['edit_text']+config['pallette']['edit_text'].split(',')),
-#        (['field']+config['pallette']['field'].split(',')),
-#        (['focus_edit_text']+config['pallette']['focus_edit_text'].split(',')),
-#        (['focus_button']+config['pallette']['focus_button'].split(',')),
-#        (['focus_field']+config['pallette']['focus_field'].split(',')),
-#        (['focus_readonly']+config['pallette']['focus_readonly'].split(',')),
-#        (['invalid']+config['pallette']['invalid'].split(',')),
-#        (['label']+config['pallette']['label'].split(',')),
-#        (['readonly']+config['pallette']['readonly'].split(',')),
-#        (['scroll']+config['pallette']['scroll'].split(',')),
-#        (['selected_field']+config['pallette']['selected_field'].split(',')),
-#        (['selected_focus_control']+config['pallette']['selected_focus_control'].split(',')),
-#        (['selected_focus_field']+config['pallette']['selected_focus_field'].split(',')),
-#        (['title']+config['pallette']['title'].split(','))
+        (['background']+[uwcol(config['pallette']['background'].split(',')[0]), uwcol(config['pallette']['background'].split(',')[2]), config['pallette']['background'].split(',')[1].replace('normal', '')]),
+        (['borders']+[uwcol(config['pallette']['borders'].split(',')[0]), uwcol(config['pallette']['borders'].split(',')[2]), config['pallette']['borders'].split(',')[1].replace('normal', '')]),
+        (['button']+[uwcol(config['pallette']['button'].split(',')[0]), uwcol(config['pallette']['button'].split(',')[2]), config['pallette']['button'].split(',')[1].replace('normal', '')]),
+        (['control']+[uwcol(config['pallette']['control'].split(',')[0]), uwcol(config['pallette']['control'].split(',')[2]), config['pallette']['control'].split(',')[1].replace('normal', '')]),
+        (['disabled']+[uwcol(config['pallette']['disabled'].split(',')[0]), uwcol(config['pallette']['disabled'].split(',')[2]), config['pallette']['disabled'].split(',')[1].replace('normal', '')]),
+        (['edit_text']+[uwcol(config['pallette']['edit_text'].split(',')[0]), uwcol(config['pallette']['edit_text'].split(',')[2]), config['pallette']['edit_text'].split(',')[1].replace('normal', '')]),
+        (['field']+[uwcol(config['pallette']['field'].split(',')[0]), uwcol(config['pallette']['field'].split(',')[2]), config['pallette']['field'].split(',')[1].replace('normal', '')]),
+        (['focus_edit_text']+[uwcol(config['pallette']['focus_edit_text'].split(',')[0]), uwcol(config['pallette']['focus_edit_text'].split(',')[2]), config['pallette']['focus_edit_text'].split(',')[1].replace('normal', '')]),
+        (['focus_button']+[uwcol(config['pallette']['focus_button'].split(',')[0]), uwcol(config['pallette']['focus_button'].split(',')[2]), config['pallette']['focus_button'].split(',')[1].replace('normal', '')]),
+        (['focus_field']+[uwcol(config['pallette']['focus_field'].split(',')[0]), uwcol(config['pallette']['focus_field'].split(',')[2]), config['pallette']['focus_field'].split(',')[1].replace('normal', '')]),
+        (['focus_readonly']+[uwcol(config['pallette']['focus_readonly'].split(',')[0]), uwcol(config['pallette']['focus_readonly'].split(',')[2]), config['pallette']['focus_readonly'].split(',')[1].replace('normal', '')]),
+        (['invalid']+[uwcol(config['pallette']['invalid'].split(',')[0]), uwcol(config['pallette']['invalid'].split(',')[2]), config['pallette']['invalid'].split(',')[1].replace('normal', '')]),
+        (['label']+[uwcol(config['pallette']['label'].split(',')[0]), uwcol(config['pallette']['label'].split(',')[2]), config['pallette']['label'].split(',')[1].replace('normal', '')]),
+        (['readonly']+[uwcol(config['pallette']['readonly'].split(',')[0]), uwcol(config['pallette']['readonly'].split(',')[2]), config['pallette']['readonly'].split(',')[1].replace('normal', '')]),
+        (['scroll']+[uwcol(config['pallette']['scroll'].split(',')[0]), uwcol(config['pallette']['scroll'].split(',')[2]), config['pallette']['scroll'].split(',')[1].replace('normal', '')]),
+        (['selected_field']+[uwcol(config['pallette']['selected_field'].split(',')[0]), uwcol(config['pallette']['selected_field'].split(',')[2]), config['pallette']['selected_field'].split(',')[1].replace('normal', '')]),
+        (['selected_focus_control']+[uwcol(config['pallette']['selected_focus_control'].split(',')[0]), uwcol(config['pallette']['selected_focus_control'].split(',')[2]), config['pallette']['selected_focus_control'].split(',')[1].replace('normal', '')]),
+        (['selected_focus_field']+[uwcol(config['pallette']['selected_focus_field'].split(',')[0]), uwcol(config['pallette']['selected_focus_field'].split(',')[2]), config['pallette']['selected_focus_field'].split(',')[1].replace('normal', '')]),
+        (['title']+[uwcol(config['pallette']['title'].split(',')[0]), uwcol(config['pallette']['title'].split(',')[2]), config['pallette']['title'].split(',')[1].replace('normal', '')])
         ]
 
