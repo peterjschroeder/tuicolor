@@ -102,7 +102,7 @@ def config_load(tui):
         (['borders']+config['pallette']['borders'].split(',')),
         (['button']+config['pallette']['button'].split(',')),
         (['control']+config['pallette']['control'].split(',')),
-        (['disabled']+config['pallette']['disable'].split(',')),
+        (['disabled']+config['pallette']['disabled'].split(',')),
         (['edit_text']+config['pallette']['edit_text'].split(',')),
         (['field']+config['pallette']['field'].split(',')),
         (['focus_edit_text']+config['pallette']['focus_edit_text'].split(',')),
