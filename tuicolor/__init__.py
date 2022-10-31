@@ -111,7 +111,7 @@ def config_load(tui):
         (['focus_readonly']+config['pallette']['focus_readonly'].split(',')),
         (['invalid']+config['pallette']['invalid'].split(',')),
         (['label']+config['pallette']['label'].split(',')),
-        (['readonly']+config['readonly'][''].split(',')),
+        (['readonly']+config['pallette']['readonly'].split(',')),
         (['scroll']+config['scroll'][''].split(',')),
         (['selected_field']+config['pallette']['selected_field'].split(',')),
         (['selected_focus_control']+config['pallette']['selected_focus_control'].split(',')),
