@@ -96,4 +96,26 @@ def config_load(tui):
                 'selected_focus_field': (colors[config['pallette']['selected_focus_field'].split(',')[0]], attributes[config['pallette']['selected_focus_field'].split(',')[1]], colors[config['pallette']['selected_focus_field'].split(',')[2]]),
                 'title': (colors[config['pallette']['title'].split(',')[0]], attributes[config['pallette']['title'].split(',')[1]], colors[config['pallette']['title'].split(',')[2]])
         }})
+    elif tui == 'urwid':
+        return [
+        (['background']+config['pallette']['background'].split(',')),
+        (['borders']+config['pallette']['borders'].split(',')),
+        (['button']+config['pallette']['button'].split(',')),
+        (['control']+config['pallette']['control'].split(',')),
+        (['disabled']+config['pallette']['disable'].split(',')),
+        (['edit_text']+config['pallette']['edit_text'].split(',')),
+        (['field']+config['pallette']['field'].split(',')),
+        (['focus_edit_text']+config['pallette']['focus_edit_text'].split(',')),
+        (['focus_button']+config['pallette']['focus_button'].split(',')),
+        (['focus_field']+config['pallette']['focus_field'].split(',')),
+        (['focus_readonly']+config['pallette']['focus_readonly'].split(',')),
+        (['invalid']+config['pallette']['invalid'].split(',')),
+        (['label']+config['pallette']['label'].split(',')),
+        (['readonly']+config['readonly'][''].split(',')),
+        (['scroll']+config['scroll'][''].split(',')),
+        (['selected_field']+config['pallette']['selected_field'].split(',')),
+        (['selected_focus_control']+config['pallette']['selected_focus_control'].split(',')),
+        (['selected_focus_field']+config['pallette']['selected_focus_field'].split(',')),
+        (['title']+config['pallette']['title'].split(','))
+        ]
 
