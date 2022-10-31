@@ -98,7 +98,7 @@ def config_load(tui):
         }})
     elif tui == 'urwid':
         def uwcol(color):
-            return color.replace('blue', 'dark blue').replace('green', 'dark green').replace('red', 'dark red').replace('yellow', 'dark yellow').replace('cyan', 'dark cyan')
+            return color.replace('blue', 'dark blue').replace('green', 'dark green').replace('red', 'dark red').replace('cyan', 'dark cyan')
         return [
         (['background']+[uwcol(config['pallette']['background'].split(',')[0]), uwcol(config['pallette']['background'].split(',')[2]), config['pallette']['background'].split(',')[1].replace('normal', '')]),
         (['borders']+[uwcol(config['pallette']['borders'].split(',')[0]), uwcol(config['pallette']['borders'].split(',')[2]), config['pallette']['borders'].split(',')[1].replace('normal', '')]),
