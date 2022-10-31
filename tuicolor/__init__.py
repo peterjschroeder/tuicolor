@@ -100,7 +100,7 @@ def config_load(tui):
         def uwcol(color):
             return color.replace('blue', 'dark blue').replace('green', 'dark green').replace('red', 'dark red').replace('cyan', 'dark cyan')
         return [
-        (['background']+[uwcol(config['pallette']['background'].split(',')[0]), uwcol(config['pallette']['background'].split(',')[2]), config['pallette']['background'].split(',')[1].replace('normal', '')]),
+        (['bg']+[uwcol(config['pallette']['background'].split(',')[0]), uwcol(config['pallette']['background'].split(',')[2]), config['pallette']['background'].split(',')[1].replace('normal', '')]),
         (['borders']+[uwcol(config['pallette']['borders'].split(',')[0]), uwcol(config['pallette']['borders'].split(',')[2]), config['pallette']['borders'].split(',')[1].replace('normal', '')]),
         (['button']+[uwcol(config['pallette']['button'].split(',')[0]), uwcol(config['pallette']['button'].split(',')[2]), config['pallette']['button'].split(',')[1].replace('normal', '')]),
         (['control']+[uwcol(config['pallette']['control'].split(',')[0]), uwcol(config['pallette']['control'].split(',')[2]), config['pallette']['control'].split(',')[1].replace('normal', '')]),
