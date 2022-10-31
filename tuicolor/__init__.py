@@ -100,7 +100,7 @@ def config_load(tui):
         def uwcol(color):
             return color.replace('blue', 'dark blue').replace('green', 'dark green').replace('red', 'dark red').replace('yellow', 'dark yellow').replace('cyan', 'dark cyan')
         return [
-        (['background']+[uwcol(config['pallette']['background'].split(',')[0]), config['pallette']['background'].split(',')[2], '' if config['pallette']['background'].split(',')[1] == 'normal' else uwcol(config['pallette']['background'].split(',')[1])]),
+        (['background']+[uwcol(config['pallette']['background'].split(',')[0]), uwcol(config['pallette']['background'].split(',')[2]), '' if config['pallette']['background'].split(',')[1] == 'normal' else config['pallette']['background'].split(',')[1]]),
 #        (['borders']+config['pallette']['borders'].split(',')),
 #        (['button']+config['pallette']['button'].split(',')),
 #        (['control']+config['pallette']['control'].split(',')),
